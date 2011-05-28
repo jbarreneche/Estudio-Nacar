@@ -1,1 +1,2 @@
 middleman -v'~>1.2.7'
+compass-960-plugin
