@@ -1,0 +1,459 @@
+%h1 Title 01 Heading
+%hr/
+%h2 Level 02 Heading
+%p
+  Lorem ipsum
+  %em emphasised text
+  dolor sit amet,
+  %strong strong text
+  consectetur adipisicing elit,
+  %abbr{:title => ""} abbreviated text
+  sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut
+  %q quoted text
+  enim ad minim veniam, quis nostrud exercitation
+  %a{:href => "/"} link text
+  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  %ins inserted text
+  irure dolor in reprehenderit in voluptate velit esse cillum
+  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+  %code code text
+  cupidatat
+  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%p
+  Suspendisse rhoncus, est ac sollicitudin viverra, leo orci sagittis massa, sed condimentum
+  %acronym{:title => ""} acronym text
+  est tortor a lectus. Curabitur porta feugiat ullamcorper. Integer lacinia mi id odio faucibus eget tincidunt nisl iaculis. Nam adipiscing hendrerit turpis, et porttitor felis sollicitudin et. Donec dictum massa ac neque accumsan tempor. Cras aliquam, ipsum sit amet laoreet hendrerit, purus
+  %del deleted text
+  sapien convallis dui, et porta leo ipsum ac nunc. Nullam ornare porta dui ac semper. Cras aliquam laoreet hendrerit. Quisque vulputate dolor eget mi porta vel porta nisl pretium. Vivamus non leo magna, quis imperdiet risus. Morbi tempor risus placerat tellus imperdiet fringilla.
+%blockquote
+  %p I am not one who was born in the possession of knowledge; I am one who is fond of antiquity, and earnest in seeking it there.
+%p
+  %cite>
+    %a{:href => "/"} Confucius, The Confucian Analects
+  ,  (551 BC - 479 BC)
+%h3 Level 03 Heading
+%p
+  Extended paragraph.
+  %a{:href => ""} Lorem ipsum
+  dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%ol
+  %li Unus
+  %li Duo
+  %li Tres
+  %li Quattuor
+%p
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+  anim id est laborum.
+%h3 Header 3
+%p
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua.
+%h4 Unordered lists
+%ul
+  %li Lorem ipsum dolor sit amet
+  %li Consectetur adipisicing elit
+  %li Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+  %li Ut enim ad minim veniam
+%p
+  Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua.
+%pre
+  %code
+    :preserve
+      body { font:0.8125em/1.618 Arial, sans-serif; 
+          background-color:#fff;  
+          color:#111;
+          }    %p
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+  anim id est laborum.
+%h4 Header 4
+%p
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua.
+%dl
+  %dt Definition list
+  %dd
+    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  %dt Lorem ipsum dolor sit amet
+  %dd
+    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+%p
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua.
+%h4 Ordered list
+%ol
+  %li List item
+  %li List item
+  %li
+    List item
+    %ol
+      %li List item level 2
+      %li
+        List item level 2
+        %ol
+          %li List item level 3
+          %li List item level 3
+%h4 Unordered list
+%ul
+  %li List item 01
+  %li List item 02
+  %li
+    List item 03
+    %ul
+      %li List item level 2
+      %li
+        List item level 2
+        %ul
+          %li List item level 3
+          %li List item level 3
+%p
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua.
+%h4 Tables
+%table{:summary => "Jimi Hendrix albums"}
+  %caption
+    Jimi Hendrix - albums
+  %thead
+    %tr
+      %th Album
+      %th Year
+      %th Price
+  %tfoot
+    %tr
+      %td Album
+      %td Year
+      %td Price
+  %tbody
+    %tr
+      %td Are You Experienced
+      %td 1967
+      %td $10.00
+    %tr
+      %td Axis: Bold as Love
+      %td 1967
+      %td $12.00
+    %tr
+      %td Electric Ladyland
+      %td 1968
+      %td $10.00
+    %tr
+      %td Band of Gypsys
+      %td 1970
+      %td $12.00
+%p
+  I am
+  %a{:href => "http://devkick.com/lab/tripoli/sample.php?abc123"} the a tag
+  example
+  %br/
+  I am
+  %abbr{:title => "test"} the abbr tag
+  example
+  %br/
+  I am
+  %acronym the acronym tag
+  example
+  %br/
+  I am
+  %b the b tag
+  example
+  %br/
+  I am
+  %big the big tag
+  example
+  %br/
+  I am
+  %cite the cite tag
+  example
+  %br/
+  I am
+  %code the code tag
+  example
+  %br/
+  I am
+  %del the del tag
+  example
+  %br/
+  I am
+  %dfn the dfn tag
+  example
+  %br/
+  I am
+  %em the em tag
+  example
+  %br/
+  I am
+  %font{:face => "verdana"} the font tag
+  example
+  %br/
+  I am
+  %i the i tag
+  example
+  %br/
+  I am
+  %ins the ins tag
+  example
+  %br/
+  I am
+  %kbd the kbd tag
+  example
+  %br/
+  I am
+  %q
+    the q tag
+    %q inside
+    a q tag
+  example
+  %br/
+  I am
+  %s the s tag
+  example
+  %br/
+  I am
+  %samp the samp tag
+  example
+  %br/
+  I am
+  %small the small tag
+  example
+  %br/
+  I am
+  %span the span tag
+  example
+  %br/
+  I am
+  %strike the strike tag
+  example
+  %br/
+  I am
+  %strong the strong tag
+  example
+  %br/
+  I am
+  %sub the sub tag
+  example
+  %br/
+  I am
+  %sup the sup tag
+  example
+  %br/
+  I am
+  %tt the tt tag
+  example
+  %br/
+  I am
+  %var the var tag
+  example
+  %br/
+  I am
+  %u the u tag
+  example
+%p
+  This is a &lt;p&gt; with some
+  %code code
+  inside.
+%h3 What is Lorem Ipsum?
+%p
+  %b Lorem Ipsum
+  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+%p
+  %strong This
+  Lorem Ipsum HTML example is created from the parts of Placeholder Markup with Lorem Ipsum - Jon Tan,
+  Emastic CSS Framework,
+  Tripoli CSS Framework and
+  Baseline CSS Framework .
+%address Address: somewhere, World
+%p
+  %a{:href => "#"} Link
+  %br/
+  %strong &lt;strong&gt;
+  %br/
+  %del &lt;del&gt; deleted
+  %br/
+  %dfn &lt;dfn&gt; dfn
+  %br/
+  %em &lt;em&gt; emphasis
+%pre
+  %code &lt;html&gt;
+  %code &lt;head&gt;
+  %code &lt;/head&gt;
+  %code &lt;body&gt;
+  %code &lt;div class = "main"&gt; &lt;div&gt;
+  %code &lt;/body&gt;
+  %code &lt;/html&gt;
+%tt
+  \&lt;tt&gt;
+  Pellentesque tempor, dui ut ultrices viverra, neque urna blandit nisi, id accumsan dolor est vitae risus.
+%hr/
+/ this following markup from http://bluetrip.org/
+%dl
+  %dt Description list title 01
+  %dd Description list description 01
+  %dt Description list title 02
+  %dd Description list description 02
+  %dd Description list description 03
+%table
+  %caption Table Caption
+  %thead
+    %tr
+      %th Table head th
+      %td Table head td
+  %tfoot
+    %tr
+      %th Table foot th
+      %td Table foot td
+  %tbody
+    %tr
+      %th Table body th
+      %td Table body td
+    %tr
+      %td Table body td
+      %td Table body td
+%hr/
+%form{:action => "#"}
+  %fieldset
+    %legend Form legend
+    %div
+      %label{:for => "f1"} Optional Text input:
+      %input#f1{:type => "text", :value => "input text"}/
+    %div
+      %label{:for => "rt1"} Required Text input:
+      %input#rt1{:required => "", :type => "text"}/
+    %div
+      %label{:for => "twp1"} Text input with pattern requirement and placeholder:
+      %input{:pattern => "\\d{5}(-\\d{4})?", :placeholder => "12345-6789", :title => "a US Zip code, with or without the +4 exension", :type => "text"}/
+    %div
+      %label{:for => "s1"} Search input:
+      %input#s1{:type => "search"}/
+    %div
+      %label{:for => "e1"} Email input:
+      %input#e1{:type => "email"}/
+    %div
+      %label{:for => "u1"} URL input:
+      %input#u1{:type => "url"}/
+    %div
+      %label{:for => "pw"} Password input:
+      %input#pw{:type => "password", :value => "password"}/
+    %div
+      %label{:for => "f2"} Radio input:
+      %input#f2{:type => "radio"}/
+    %div
+      %label{:for => "f3"} Checkbox input:
+      %input#f3{:type => "checkbox"}/
+    %div
+      %label{:for => "f4"} Select field:
+      %select#f4
+        %option Option 01
+        %option Option 02
+    %div
+      %label{:for => "f5"} Textarea:
+      %textarea#f5{:cols => "30", :rows => "5"} Textarea text
+    %div
+      %label{:for => "f6"} Input Button:
+      %input#f6{:type => "button", :value => "button text"}/
+    %div
+      %label{:for => "f7"} Submit Button:
+      %input#f7{:type => "submit", :value => "button text"}/
+/ thx peter beverloo: http://peter.sh/examples/?/html/meter-progress.html
+%p#no-support{:style => "color: red; margin-bottom: 12px;"}
+  Your browser does not support these elements yet! Consider downloading a
+  = succeed "." do
+    %a{:href => "http://tools.peter.sh/download-latest-chromium.php"} Chromium Nightly
+  %br/
+%h3 &lt;progress&gt;
+%p
+  The progress element (spec:
+  = succeed ")" do
+    %a{:href => "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-button-element.html#the-progress-element"} 4.10.16
+  represents the completion progress of a task and can be both indeterminate as determinate.
+%ul.compact
+  %li
+    %label Indeterminate
+    %progress{:max => "100"}
+  %li
+    %label Progress: 0%
+    %progress{:max => "10", :value => "0"}
+  %li
+    %label Progress: 100%
+    %progress{:max => "3254", :value => "3254"}
+  %li
+    %label Progress: 57%
+    %progress{:max => "0.7", :value => "0.4"}
+  %li
+    %label Javascript
+    %progress#progress-javascript-example
+%h3 &lt;meter&gt;
+%p
+  Displaying a scalar measurement within a known range, like hard drive usage, can be done using the meter element (spec:
+  = succeed ")" do
+    %a{:href => "http://www.whatwg.org/specs/web-apps/current-work/multipage/the-button-element.html#the-meter-element"} 4.10.17
+%ul.compact
+  %li
+    %label Meter: empty
+    %meter{:value => "0"}
+  %li
+    %label Meter: full
+    %meter{:value => "1"}
+  %li
+    %label Meter: "a bit"
+    %meter{:max => ".41", :min => ".34", :value => ".36"}
+  %li
+    %label Preferred usage
+    %meter{:high => "200", :low => "100", :max => "250", :min => "50", :value => "120"}
+  %li
+    %label Too much traffic
+    %meter{:high => "8192", :low => "2048", :max => "10240", :min => "1024", :value => "9216"}
+  %li
+    %label Optimum value
+    %meter{:optimum => ".8", :value => ".5"}
+  %li
+    %label Javascript
+    %meter#meter-javascript-example{:value => "0"}
+:javascript
+  (function () {
+    if (! ("position" in document.createElement ("progress"))) {
+      var elements = document.querySelectorAll ("meter, progress");
+      for (var i = 0, j = elements.length; i < j; i++) {
+        elements [i].style.border = "1px solid red";
+        elements [i].style.height = "12px";
+        elements [i].style.display = "inline-block";
+        elements [i].style.webkitAppearance = "none";
+      }
+      return ;
+    }
+     
+    document.getElementById ("no-support").style.display = "none";
+     
+    /** Setup the <progress> JavaScript example **/
+    var progressExample = document.getElementById ("progress-javascript-example");
+    progressExample.min = 50;
+    progressExample.max = 122;
+        
+    setInterval (function () {
+      progressExample.value = progressExample.min + Math.random () * (progressExample.max - progressExample.min);
+    }, 1000);
+     
+    /** We'd like some fancy <meter> examples too **/
+    var meterExample = document.getElementById ("meter-javascript-example");
+    meterExample.min = 0;
+    meterExample.max = 100;
+    meterExample.value = 50;
+    meterExample.low  = 20;
+    meterExample.high = 80;
+    meterExample.optimum = 65;
+         
+    setInterval (function () {
+      meterExample.value   = meterExample.min + Math.random () * (meterExample.max - meterExample.min);
+      meterExample.optimum = 65 + (5 - Math.random () * 10);
+    }, 1000);
+  })();
