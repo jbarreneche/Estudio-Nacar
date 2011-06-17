@@ -1,4 +1,5 @@
 @import "compass"
+@import "compass/typography/text/replacement"
 
 // HTML5 Boilerplate Colors
 //  edit, but don't remove these
@@ -14,13 +15,25 @@ $h5bp-webkit-tap:     #FF5E99
 //  don't forget to uncomment the "require 'ninesixty'" line in config.rb!
 @import "960grid"
 
+@import partials/definitions
 @import partials/common
+@import partials/mixins
 
 @import 960/text
 
 +text($font-futura)
 // Your own styles go here.
+section.welcome
+  @include center-page(852px, 524px / 2)
 
+  h1
+    @include replace-text("logo.png")
+    width: 852px
+    height: 152px
+
+  h2
+    text-align: right
+    font-style: oblique
 
 
 
