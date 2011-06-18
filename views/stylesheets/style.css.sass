@@ -1,5 +1,6 @@
 @import "compass"
 @import "compass/typography/text/replacement"
+@import "compass/layout/sticky-footer"
 
 // HTML5 Boilerplate Colors
 //  edit, but don't remove these
@@ -23,11 +24,53 @@ $h5bp-webkit-tap:     #FF5E99
 
 +text($font-futura)
 // Your own styles go here.
-section.welcome
+
+@include sticky-footer(125px, "#container", "#root-footer", "#footer-container")
+
+#container
+  @include grid-container
+  header, #main-content, footer
+    @include grid(12)
+  #sidebar
+    @include grid(3)
+    @include alpha
+  article
+    @include grid(9)
+    @include omega
+  #root-footer
+    clear: both
+  header
+    height: 120px
+    h1
+      height: 76px
+      @include replace-text("header-logo.png", 0px)
+      margin-bottom: 0
+    h2
+      font-size: 1em
+      margin-left: 160px
+
+#footer-container
+  @include grid-container
+  footer
+    @include grid(12)
+
+article
+  aside
+    float: right
+  .map
+    width: 425px
+
+#contacto
+  dt, dd
+    display: inline
+
+  min-height: 350px
+
+#welcome
   @include center-page(852px, 524px / 2)
 
   h1
-    @include replace-text("logo.png")
+    @include replace-text("welcome-logo.png")
     width: 852px
     height: 152px
 
