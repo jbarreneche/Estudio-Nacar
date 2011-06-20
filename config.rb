@@ -16,7 +16,7 @@ require 'ninesixty'
 
 # Per-page layout changes
 # With no layout
-# page "/index.html", :layout => false
+page "/index.html", :layout => false
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
 
