@@ -35,8 +35,10 @@
 
     -# All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
     = javascript_include_tag "libs/modernizr-1.7.min.js"
+    /[if lt IE 9]
+      %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
 
-  %body
+  %body{ :class => page_classes }
     #container
       %header
         = yield_content(:header)

@@ -1,6 +1,8 @@
 @import "compass"
 @import "compass/typography/text/replacement"
 @import "compass/layout/sticky-footer"
+@import "compass/css3/text-shadow"
+@import "compass/css3/transition"
 
 // HTML5 Boilerplate Colors
 //  edit, but don't remove these
@@ -25,22 +27,31 @@ $h5bp-webkit-tap:     #FF5E99
 +text($font-futura)
 // Your own styles go here.
 
-@include sticky-footer(125px, "#container", "#root-footer", "#footer-container")
+$footer-height: 40px
+@include sticky-footer($footer-height, "#container", "#root-footer", "#footer-container")
 
 #container
   @include grid-container
+  background-color: fade-out($bg_color, 0.35)
+  .ie6 &, .ie7 &, .ie8 &
+    background-color: $bg_color
+  .index &
+    background-color: transparent
+
   header, #main-content, footer
     @include grid(12)
   #sidebar
     @include grid(3)
     @include alpha
-  article
+  #content
     @include grid(9)
     @include omega
   #root-footer
     clear: both
   header
-    height: 120px
+    height: 110px
+    margin-bottom: 15px
+    border-bottom: $fg_color_2 1px solid
     h1
       height: 76px
       @include replace-text("header-logo.png", 0px)
@@ -53,12 +64,54 @@ $h5bp-webkit-tap:     #FF5E99
   @include grid-container
   footer
     @include grid(12)
+    border-top: $fg_color_2 1px solid
+  p
+    padding: 0 10px
+    margin-top: 10px
+    margin-bottom: -10px
 
 article
+  *
+    color: $fg_color_2
   aside
     float: right
   .map
     width: 425px
+
+article, section
+  & > *
+    padding: 0 10px
+
+#sidebar > ul
+  // Boxing and border
+  @include border-radius(5px)
+  @include box-shadow(1px, 1px, 3px)
+  li
+    border-bottom: 1px solid lighten(#2961A9, 33%)
+  ul li, li:last-child
+    border: none
+
+  // Colors
+  background-color: darken(#2961A9, 33%)
+  a
+    padding: 5px 10px
+    display: block
+    text-decoration: none
+
+    color: lighten(#2961A9, 50%)
+    @include text-shadow(1px, 1px, 1px, #325179)
+
+    &:hover
+      color: darken(#6594D1, 30%)
+      @include transition(color, 0.2s, linear)
+
+  ul a
+    background-color: darken(#6594D1, 40%)
+    &:hover
+      background-color: lighten(#2961A9, 50%)
+      color: #2961A9
+      @include text-shadow(none)
+      @include transition("color, background-color", 0.2s, linear)
 
 #contacto
   dt, dd
@@ -77,8 +130,8 @@ article
   h2
     text-align: right
     font-style: oblique
-
-
+    @include single-text-shadow($light_bg, $hoff: 1px, $voff: 1px)
+    color: $fg_color_2
 
 // These imports should remain below the bulk of the stylesheet so they can override correctly.
 @import "html5boilerplate/nonsemantichelpers", "html5boilerplate/mediaqueries"
